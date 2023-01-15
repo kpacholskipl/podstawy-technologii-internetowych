@@ -203,7 +203,7 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
-    color: grey;
+    color: rgb(73, 73, 73);
     text-align: left;
 }
 

@@ -102,8 +102,40 @@ body {
     margin-bottom: 1rem;
 }
 
-.main-post--wrapper {
+@media only screen and (max-width:767px) {
+    .main-post--wrapper {
+        width: 100% !important;
+    }
 
+    .footer--wrapper {
+        height: 15vh !important;
+        width: 100vw !important;
+        margin: 0 !important;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    .main-post--wrapper {
+        width: 50% !important;
+    }
+
+    .footer--wrapper {
+        margin: 0 !important;
+        height: 15vh !important;
+        width: 100vw !important;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width:1400px) {
+    .footer--wrapper {
+        margin: 0 !important;
+        width: 100vw !important;
+        height: 15vh !important;
+    }
+}
+
+.main-post--wrapper {
     width: 33.3%;
 }
 
@@ -197,14 +229,16 @@ body {
     width: auto;
     margin: auto;
 }
-.sr-only{
-    position:absolute;
-    left:-10000px;
-    top:auto;
-    width:1px;
-    height:1px;
-    overflow:hidden;
- }
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
 .main-post-card .post-card--content {
     overflow: hidden;
     display: -webkit-box;

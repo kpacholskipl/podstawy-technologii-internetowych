@@ -197,7 +197,14 @@ body {
     width: auto;
     margin: auto;
 }
-
+.sr-only{
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+ }
 .main-post-card .post-card--content {
     overflow: hidden;
     display: -webkit-box;

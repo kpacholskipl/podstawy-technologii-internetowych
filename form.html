@@ -19,6 +19,7 @@
             src="assets/logo.png"
             alt="My logo"
           />
+          <label class="sr-only" for="search">Search</label>
           <input
             type="text"
             name="search"
@@ -36,12 +37,23 @@
     <main class="main--wrapper">
       <form class="wrapper">
         <h2 class="form--title">Formularz kontaktowy</h2>
-        <input class="form--input" placeholder="Czego dotyczy błąd?" />
+        <label class="sr-only" for="blad-first">Czego dotyczy błąd?</label>
         <input
+          class="form--input"
+          id="blad-first"
+          placeholder="Czego dotyczy błąd?"
+        />
+        <label class="sr-only" for="blad-second"
+          >W jakim miejsu występuje błąd??</label
+        >
+        <input
+          id="blad-second"
           class="form--input"
           placeholder="W jakim miejsu występuje błąd?"
         />
+        <label class="sr-only" for="blad-opis">Opisz go dokładnie</label>
         <textarea
+          id="blad-opis"
           class="form--textarea"
           rows="10"
           placeholder="Opisz go dokładnie"

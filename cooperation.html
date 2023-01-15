@@ -19,6 +19,7 @@
             src="assets/logo.png"
             alt="My logo"
           />
+          <label class="sr-only" for="search">Search</label>
           <input
             type="text"
             name="search"
@@ -69,13 +70,17 @@
           </tbody>
         </table>
         <h2 class="form--title">Fourmularz kontaktowy</h2>
+        <label class="sr-only" for="kontakt">Kontakt</label>
         <input
           class="form--input"
+          id="kontakt"
           placeholder="Kontakt (nr telefonu, adres e-mail)"
         />
+        <label class="sr-only" for="opis">Opis</label>
         <textarea
           class="form--textarea"
           rows="10"
+          id="opis"
           placeholder="Opisz propozycję"
         ></textarea>
         <button class="form--button">Wyślij</button>

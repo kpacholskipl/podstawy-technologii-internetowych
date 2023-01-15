@@ -19,6 +19,7 @@
             src="assets/logo.png"
             alt="My logo"
           />
+          <label class="sr-only" for="search">Search</label>
           <input
             type="text"
             name="search"
@@ -37,16 +38,20 @@
       <div class="wrapper login">
         <form action="admin.html">
           <h2 class="form--title">Logowanie</h2>
+          <label for="email" class="sr-only">Email</label>
           <input
             class="form--input"
             placeholder="E-mail"
             type="email"
+            id="email"
             required
           />
+          <label for="password" class="sr-only">Hasło</label>
           <input
             class="form--input"
             placeholder="Hasło"
             type="password"
+            id="password"
             required
           />
           <button type="submit" class="form--button">Zaloguj się</button>

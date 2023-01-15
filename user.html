@@ -41,15 +41,19 @@
           <div class="user--wrapper">
             <div class="user-input__wrapper">
               <div>
+                <label class="sr-only" for="imie">Imie</label>
                 <input
                   class="form--input"
-                  placeholder="Imie"
+                  placeholder="mie"
+                  id="imie"
                   required
                   value="Andrzej"
                 />
+                <label class="sr-only" for="nazwisko">Nazwisko</label>
                 <input
                   class="form--input"
                   placeholder="Nazwisko"
+                  id="nazwisko"
                   required
                   value="Kowalski"
                 />
@@ -62,26 +66,39 @@
               </label>
             </div>
           </div>
+          <label class="sr-only" for="email">Email</label>
           <input
             class="form--input"
             placeholder="E-mail"
             type="email"
+            id="email"
             required
             value="andrzejkowalski@gmail.com"
           />
+          <label class="sr-only" for="telefon">Telefon</label>
           <input
             class="form--input"
             placeholder="Telefon"
+            id="telefon"
             type="tel"
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
             required
             value="697-123-123"
           />
-          <textarea class="form--textarea" rows="5" required placeholder="Opis">
+          <label class="sr-only" for="opis">Opis</label>
+          <textarea
+            class="form--textarea"
+            rows="5"
+            required
+            placeholder="Opis"
+            id="opis"
+          >
 Cześć, jestem Andrzej. Programowaniem zajmuję się od 14 roku życia. Jest to zarówno moja praca na co dzień jak i moja pasja, której poświęcam czas w wolnych chwilach. Po za IT mam żonę i dwójkę dzieci. Lubię poczytać dobrą książkę, popijając dobrą kawusie.
         </textarea
           >
           <button type="submit" class="form--button">Zapisz</button>
+          
+          
         </form>
       </div>
     </main>

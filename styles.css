@@ -112,8 +112,9 @@ body {
 
     .footer--wrapper {
         height: 15vh !important;
-        width: 100vw !important;
+        width: 100% !important;
         margin: 0 !important;
+        padding: 0 !important;
     }
 
 }
@@ -124,9 +125,10 @@ body {
     }
 
     .footer--wrapper {
-        margin: 0 !important;
         height: 15vh !important;
-        width: 100vw !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }
 

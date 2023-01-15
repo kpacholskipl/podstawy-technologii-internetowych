@@ -106,8 +106,13 @@ body {
     .main-post--wrapper {
         width: 100% !important;
     }
+
     .main--wrapper {
-        max-width: 100vw !important;   
+        max-width: 100vw !important;
+    }
+
+    .toolbar-input {
+        width: 30vw !important;
     }
 
     .footer--wrapper {

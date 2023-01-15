@@ -23,7 +23,6 @@ body {
 
 .toolbar--wrapper {
     position: relative;
-    /* width: 100%; */
     background-color: rgb(31 41 55/1);
     margin-left: auto;
     margin-right: auto;
@@ -65,6 +64,11 @@ body {
 
 .toolbar-input:focus {
     border-color: rgb(99 102 241 / 1);
+}
+
+.toolbar-button__admin {
+    color: white !important;
+    margin-left: 5px;
 }
 
 .toolbar-button {
@@ -203,13 +207,17 @@ body {
     text-align: left;
 }
 
-.main-post-card .post-card--button__wrapper {
+.post-card--button__wrapper {
     display: flex;
     align-items: end;
     flex-direction: column-reverse;
 }
 
-.main-post-card .post-card--button {
+.posts--table form {
+    align-items: flex-start;
+}
+
+.post-card--button {
     text-align: right;
     background-color: rgb(229 231 235 / 1);
     padding: 0.25rem;
@@ -221,11 +229,11 @@ body {
     align-items: center;
 }
 
-.main-post-card .post-card--button:hover {
+.post-card--button:hover {
     background-color: rgb(156 163 175 / 1);
 }
 
-.main-post-card .post-card--button__icon {
+.post-card--button__icon {
     height: 1.5rem;
     width: 1.5rem;
     display: block;
@@ -241,7 +249,6 @@ body {
 
 .footer--wrapper {
     position: relative;
-    /* width: 100%; */
     background-color: rgb(31 41 55/1);
     margin-left: auto;
     margin-right: auto;
@@ -249,7 +256,7 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
     width: 80vw;
-    height: 7vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     color: white;
@@ -266,7 +273,7 @@ body {
     font-weight: bold;
 }
 
-.form {
+.wrapper {
     min-height: 85vh;
     display: flex;
     justify-content: center;
@@ -278,12 +285,12 @@ body {
     max-width: 700px;
 }
 
-.form .form--title {
+.form--title {
     text-align: center;
     font-size: 2rem;
 }
 
-.form .form--input {
+.form--input {
     width: 100%;
     height: 36px;
     margin-top: 1vh;
@@ -295,7 +302,7 @@ body {
     border: 1px solid rgb(31 41 55/1);
 }
 
-.form .form--textarea {
+.form--textarea {
     width: 100%;
     margin-top: 1vh;
     margin-bottom: 1vh;
@@ -306,7 +313,7 @@ body {
     border: 1px solid rgb(31 41 55/1);
 }
 
-.form .form--button {
+.form--button {
     width: 103%;
     cursor: pointer;
     font-size: 1.125rem;
@@ -324,15 +331,13 @@ body {
 }
 
 .info {
-    min-height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: nowrap;
     max-width: 650px;
+    width: fit-content;
+}
+
+.stats {
+    max-width: 650px;
+    min-width: 400px;
     width: fit-content;
 }
 
@@ -347,4 +352,113 @@ body {
 .info .info--text .info--link {
     color: rgb(71, 71, 71);
     text-decoration: none;
+}
+
+.posts--table,
+.cooperation--table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-radius: 22px;
+    border-style: hidden;
+    box-shadow: 0 0 0 2px rgb(31 41 55/1);
+}
+
+.cooperation--table thead th:first-child,
+.posts--table thead th:first-child {
+    border-top-left-radius: 20px;
+}
+
+.posts--table thead th:nth-child(5),
+.cooperation--table thead th:nth-child(2) {
+    border-top-right-radius: 20px;
+}
+
+.posts--table td,
+.posts--table th,
+.cooperation--table td,
+.cooperation--table th {
+    padding: 8px;
+}
+
+.posts--table tr:nth-child(even),
+.cooperation--table tr:nth-child(even) {
+    background-color: rgb(161, 174, 196);
+}
+
+.posts--table tr:last-child td:first-child,
+.cooperation--table tr:last-child td:first-child {
+    border-bottom-left-radius: 22px !important;
+}
+
+.posts--table tr:last-child td:last-child,
+.cooperation--table tr:last-child td:last-child {
+    border-bottom-right-radius: 22px !important;
+}
+
+.cooperation--table tr:hover {
+    background-color: #ddd;
+}
+
+.posts--table th,
+.cooperation--table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(31 41 55/1);
+    color: white;
+}
+
+.login {
+    max-width: 500px;
+}
+
+.stats {
+    max-width: 900px;
+    min-width: 700;
+    width: fit-content;
+}
+
+.user--wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0 1;
+}
+
+.post--wrapper img {
+    max-height: 200px;
+    width: auto;
+}
+
+.post--wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.user--wrapper .form--input {
+    width: 90%;
+}
+
+.user--wrapper img {
+    max-height: 150px;
+    width: auto;
+    cursor: pointer;
+}
+
+.user--img__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.user-input__wrapper {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 1;
+    flex-basis: 0;
+
 }

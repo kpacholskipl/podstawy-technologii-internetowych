@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technologie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <nav class="toolbar--wrapper">
+      <div class="toolbar--container">
+        <div class="toolbar-image--wrapper">
+          <img
+            class="toolbar-image"
+            id="toolbar-image"
+            onclick="openHome()"
+            src="assets/logo.png"
+            alt="My logo"
+          />
+          <a class="toolbar-button toolbar-button__admin" href="posts.html"
+            >Posty</a
+          >
+          <a class="toolbar-button toolbar-button__admin" href="users.html"
+            >Użytkownicy</a
+          >
+          <a class="toolbar-button toolbar-button__admin" href="stats.html"
+            >Statystyki</a
+          >
+        </div>
+        <div>
+          <a class="toolbar-button" href="index.html">Wyloguj</a>
+        </div>
+      </div>
+    </nav>
+    <main class="main--wrapper">
+      <div class="wrapper login">
+        <form action="admin.html">
+          <h2 class="form--title">Edycja użytkownika</h2>
+          <div class="user--wrapper">
+            <div class="user-input__wrapper">
+              <div>
+                <input
+                  class="form--input"
+                  placeholder="Imie"
+                  required
+                  value="Andrzej"
+                />
+                <input
+                  class="form--input"
+                  placeholder="Nazwisko"
+                  required
+                  value="Kowalski"
+                />
+              </div>
+            </div>
+            <div class="user--img__wrapper">
+              <input type="file" id="imgupload" style="display: none" />
+              <label for="imgupload">
+                <img src="./assets/user.png" />
+              </label>
+            </div>
+          </div>
+          <input
+            class="form--input"
+            placeholder="E-mail"
+            type="email"
+            required
+            value="andrzejkowalski@gmail.com"
+          />
+          <input
+            class="form--input"
+            placeholder="Telefon"
+            type="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+            required
+            value="697-123-123"
+          />
+          <textarea class="form--textarea" rows="5" required placeholder="Opis">
+Cześć, jestem Andrzej. Programowaniem zajmuję się od 14 roku życia. Jest to zarówno moja praca na co dzień jak i moja pasja, której poświęcam czas w wolnych chwilach. Po za IT mam żonę i dwójkę dzieci. Lubię poczytać dobrą książkę, popijając dobrą kawusie.
+        </textarea
+          >
+          <button type="submit" class="form--button">Zapisz</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer--wrapper">
+      <p class="footer--text">
+        <a href="form.html" class="footer--link">Zgłoś błąd</a>
+        <br />
+        <a href="cooperation.html" class="footer--link">Współpraca</a>
+        <br />
+        <a href="info.html" class="footer--link">© Krystian Pacholski</a>
+      </p>
+    </footer>
+  </body>
+</html>

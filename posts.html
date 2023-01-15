@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technologie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <nav class="toolbar--wrapper">
+      <div class="toolbar--container">
+        <div class="toolbar-image--wrapper">
+          <img
+            class="toolbar-image"
+            id="toolbar-image"
+            onclick="openHome()"
+            src="assets/logo.png"
+            alt="My logo"
+          />
+          <a class="toolbar-button toolbar-button__admin" href="posts.html"
+            >Posty</a
+          >
+          <a class="toolbar-button toolbar-button__admin" href="users.html"
+            >Użytkownicy</a
+          >
+          <a class="toolbar-button toolbar-button__admin" href="stats.html"
+            >Statystyki</a
+          >
+        </div>
+        <div>
+          <a class="toolbar-button" href="index.html">Wyloguj</a>
+        </div>
+      </div>
+    </nav>
+    <main class="main--wrapper">
+      <div class="wrapper posts">
+        <h2 class="form--title">Posty</h2>
+        <table class="posts--table">
+          <thead>
+            <th>ID</th>
+            <th>Tytuł</th>
+            <th>Autor</th>
+            <th>Data powstania</th>
+            <th>Akcja</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Building a chat app with React Native</td>
+              <td>Andrzej Kowalski</td>
+              <td>01.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Building a news app using RedwoodJS</td>
+              <td>Janusz Kowalski</td>
+              <td>02.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Next.js is turning 5. Join the celebration!</td>
+              <td>Zbigniew Kowalski</td>
+              <td>03.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Building a Banking admin app using Blitzjs</td>
+              <td>Andrzej Kowalski</td>
+              <td>04.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>How to use Prisma in Blitzjs</td>
+              <td>Zbigniew Kowalski</td>
+              <td>05.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>New patterns for media apps</td>
+              <td>Stanisław Kowalski</td>
+              <td>06.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+
+            <tr>
+              <td>7</td>
+              <td>CSS Animated Grid Layouts</td>
+              <td>Stanisław Kowalski</td>
+              <td>07.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+
+            <tr>
+              <td>8</td>
+              <td>Create a passkey for passwordless logins</td>
+              <td>Zbigniew Kowalski</td>
+              <td>08.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+
+            <tr>
+              <td>9</td>
+              <td>New patterns for amazing apps</td>
+              <td>Andrzej Kowalski</td>
+              <td>09.01.2023</td>
+              <td>
+                <form
+                  class="post-card--button__wrapper"
+                  action="post.html"
+                  method="get"
+                >
+                  <button class="post-card--button" type="submit">
+                    <svg
+                      class="post-card--button__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="post-card--button__icon"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      />
+                    </svg>
+                  </button>
+                </form>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer--wrapper">
+      <p class="footer--text">
+        <a href="form.html" class="footer--link">Zgłoś błąd</a>
+        <br />
+        <a href="cooperation.html" class="footer--link">Współpraca</a>
+        <br />
+        <a href="info.html" class="footer--link">© Krystian Pacholski</a>
+      </p>
+    </footer>
+  </body>
+</html>

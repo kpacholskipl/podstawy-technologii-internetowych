@@ -1,31 +1,85 @@
-<div class="main-post-card">
-         <div class="post-card--bar"></div>
-            <div class="post-card--wrapper">
-              <div class="post-caard--title">
-                Building a chat app with React Native
-              </div>
-              <div class="post-card--content">
-                Dodo, a Lory and an old conger-eel, that used to know. Let me
-                see--how IS it to his ear. Alice considered a little girl,' said
-                Alice
-              </div>
-              <button class="post-card--button">
-                <svg
-                  class="post-card--button__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="post-card--button__icon"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                  />
-                </svg>
-              </button>
-            </div>
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technologie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <nav class="toolbar--wrapper">
+      <div class="toolbar--container">
+        <div class="toolbar-image--wrapper">
+          <img
+            class="toolbar-image"
+            id="toolbar-image"
+            onclick="openHome()"
+            src="assets/logo.png"
+            alt="My logo"
+          />
+          <a class="toolbar-button toolbar-button__admin" href="posts.html"
+            >Posty</a
+          >
+          <a class="toolbar-button toolbar-button__admin" href="users.html"
+            >Użytkownicy</a
+          >
+          <a class="toolbar-button toolbar-button__admin" href="stats.html"
+            >Statystyki</a
+          >
+        </div>
+        <div>
+          <a class="toolbar-button" href="index.html">Wyloguj</a>
+        </div>
+      </div>
+    </nav>
+    <main class="main--wrapper">
+      <div class="wrapper login">
+        <form action="admin.html">
+          <h2 class="form--title">Edycja postu</h2>
+          <div class="post--wrapper">
+            <input type="file" id="imgupload" style="display: none" />
+            <label for="imgupload">
+              <img src="./assets/posts/1.png" />
+            </label>
           </div>
-</div>
+          <input
+            class="form--input"
+            placeholder="Tytuł"
+            required
+            value="Building a chat app with React Native"
+          />
+          <textarea
+            class="form--textarea"
+            rows="25"
+            required
+            placeholder="Treść"
+          >
+To get started with this tutorial, make sure you have set up your development environment for React Native. The Stream Chat React Native SDK supports apps created with the React Native CLI as well as apps created with Expo.
+
+To get started, create an application with either the React Native CLI, or the Expo CLI and install the necessary dependencies:
+
+When prompted, select one of the blank templates.
+Stream Chat has a number of peer dependencies that are required to take advantage of all of the out of the box features. It is suggested you follow the install instructions for each package to ensure it is properly setup. Most if not all of the required packages now support auto-linking so setup should be minimal.
+
+The Stream Chat SDK does not handle navigation, but libraries like React Navigation makes it easy for us to set up a stack navigator, and the three screens we need for our application.
+The first thing we need to set up is the chat client, which is the low level JavaScript client used by the SDK to communicate with the Stream Chat service. The chat client is a JavaScript class object that we for the sake of simplicity in this tutorial will keep as a globally accessible variable. getInstance is a static method that takes apiKey as parameter and returns a singleton instance of the chat client.
+
+You can safely use getInstance method to get the chat client instance, anywhere in your application. This way you can avoid passing the chat client instance around through context or props.        </textarea
+          >
+          <button type="submit" class="form--button">Zapisz</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer--wrapper">
+      <p class="footer--text">
+        <a href="form.html" class="footer--link">Zgłoś błąd</a>
+        <br />
+        <a href="cooperation.html" class="footer--link">Współpraca</a>
+        <br />
+        <a href="info.html" class="footer--link">© Krystian Pacholski</a>
+      </p>
+    </footer>
+  </body>
+</html>

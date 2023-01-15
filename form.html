@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technologie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="toolbar--wrapper">
+      <div class="toolbar--container">
+        <div class="toolbar-image--wrapper">
+          <img
+            class="toolbar-image"
+            id="toolbar-image"
+            onclick="openHome()"
+            src="assets/logo.png"
+            alt="My logo"
+          />
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="toolbar-input"
+            placeholder="Wyszukaj"
+          />
+        </div>
+        <div>
+          <a class="toolbar-button" href="/login">Zaloguj</a>
+        </div>
+      </div>
+    </div>
+    <div class="main--wrapper">
+      <form class="form">
+        <h2 class="form--title">Formularz kontaktowy</h2>
+        <input class="form--input" placeholder="Czego dotyczy błąd?" />
+        <input
+          class="form--input"
+          placeholder="W jakim miejsu występuje błąd?"
+        />
+        <textarea
+          class="form--textarea"
+          rows="10"
+          placeholder="Opisz go dokładnie"
+        ></textarea>
+        <button class="form--button">Wyślij</button>
+      </form>
+    </div>
+    <footer class="footer--wrapper">
+      <p class="footer--text">
+        <a href="form.html" class="footer--link">Zgłoś błąd</a>
+        <br />
+        <a href="info.html" class="footer--link">© Krystian Pacholski</a>
+      </p>
+    </footer>
+    <script>
+      includeHTML();
+      randomColor();
+    </script>
+  </body>
+</html>

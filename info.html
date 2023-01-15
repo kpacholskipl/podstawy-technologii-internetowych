@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technologie</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <div class="toolbar--wrapper">
+      <div class="toolbar--container">
+        <div class="toolbar-image--wrapper">
+          <img 
+          class="toolbar-image"
+          onclick="openHome()"
+           id="toolbar-image"
+           src="assets/logo.png" 
+           alt="My logo" />
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="toolbar-input"
+            placeholder="Wyszukaj"
+          />
+        </div>
+        <div>
+          <a class="toolbar-button" href="/login">Zaloguj</a>
+        </div>
+      </div>
+    </div>
+    <div class="main--wrapper">
+      <form class="info">
+        <div class="info-text--wrapper"></span>
+          <h3 class="info--text">Stronę wykonał: <span class="info--text__gray">Krystian Pacholski</span></h3>
+          <h3 class="info--text">Nr indeksu:<span class="info--text__gray"> 398873</span></h3>
+          <h3 class="info--text">
+            Nazwa przedmiotu:<span class="info--text__gray"> Podstawy technologii internetowych</span>
+          </h3>
+          <h3 class="info--text">Nazwa przeglądarki:<span class="info--text__gray"> Google Chrome</span></h3>
+          <h3 class="info--text">Wersja przeglądarki: <span class="info--text__gray">108.0.5359.126</span></h3>
+          <h3 class="info--text">
+            <a class="info--link" href="assets/specyfikacja.doc" target="_blank" download>Plik ze specyfikacją</a>
+          </h3>
+        </div>
+      </form>
+    </div>
+    <footer class="footer--wrapper">
+      <p class="footer--text">
+        <a href="form.html" class="footer--link">Zgłoś błąd</a>
+        <br />
+        <a href="info.html" class="footer--link">© Krystian Pacholski</a>
+      </p>
+    </footer>
+    <script>
+      includeHTML();
+      randomColor();
+    </script>
+  </body>
+</html>
